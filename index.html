@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Eglise ADN</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600;800&display=swap" rel="stylesheet">
+
+<style>
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    background: #f3efe7;
+    color: #4b3f2f;
+}
+
+/* NAV */
+nav {
+    position: sticky;
+    top: 0;
+    background: #f3efe7;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+nav a {
+    text-decoration: none;
+    color: #4b3f2f;
+    font-weight: 600;
+}
+
+/* LOGO */
+.logo {
+    position: absolute;
+    left: 20px;
+    top: 10px;
+    height: 40px;
+    opacity: 0.8;
+}
+
+/* HERO */
+.hero {
+    background: #e8dfd1;
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin: 0;
+}
+
+.hero p {
+    font-size: 1.2em;
+    max-width: 600px;
+    margin: auto;
+}
+
+/* bouton descendu */
+.btn {
+    display: inline-block;
+    margin-top: 40px;
+    padding: 12px 25px;
+    background: #c8a97e;
+    color: white;
+    border-radius: 25px;
+    text-decoration: none;
+}
+
+/* SECTIONS */
+section {
+    padding: 60px 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+h2 {
+    text-align: center;
+}
+
+/* CARDS */
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    width: 280px;
+    text-align: center;
+}
+
+/* SOCIAL CENTRÉ */
+.social {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.social a {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 15px;
+    border-radius: 20px;
+    text-decoration: none;
+    color: white;
+}
+
+.fb { background:#4267B2;}
+.yt { background:#FF0000;}
+.ig { background:#E1306C;}
+
+/* DON */
+.don {
+    text-align: center;
+}
+
+.qr img {
+    width: 180px;
+    margin-top: 15px;
+}
+
+/* FOOTER */
+footer {
+    background: #e8dfd1;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+.footer-logo {
+    height: 30px;
+    opacity: 0.6;
+}
+</style>
+
+</head>
+<body>
+
+<img src="logo.jpg" class="logo">
+
+<nav>
+    <a href="#vision">Vision</a>
+    <a href="#activites">Activités</a>
+    <a href="#horaires">Horaires</a>
+    <a href="#contact">Contact</a>
+    <a href="#don">Soutenir</a>
+</nav>
+
+<div class="hero">
+    <h1>Eglise ADN</h1>
+    <p>Bienvenue à la maison</p>
+    <a href="#contact" class="btn">Nous rejoindre</a>
+</div>
+
+<section id="vision">
+    <h2>Notre vision</h2>
+    <p style="text-align:center;">
+        Développer (mûrir), fonctionner (servir) et reproduire (imiter Christ)
+    </p>
+</section>
+
+<section id="activites">
+    <h2>Nos activités</h2>
+    <div class="cards">
+        <div class="card">
+            <h3>Célébrations</h3>
+            <p>Chaque dimanche à 10h30</p>
+        </div>
+        <div class="card">
+            <h3>Prière</h3>
+            <p>Jeudi à 19h00</p>
+        </div>
+        <div class="card">
+            <h3>Jeunesse</h3>
+            <p>Samedi à 17h00</p>
+        </div>
+    </div>
+</section>
+
+<section id="horaires">
+    <h2>Horaires</h2>
+    <p style="text-align:center;">
+        Dimanche : 10h30<br>
+        Jeudi : 19h00<br>
+        Samedi (Jeunesse) : 17h00
+    </p>
+</section>
+
+<section id="contact">
+    <h2>Contact</h2>
+    <p style="text-align:center;">
+        📍 Rue de la Justice 11, 5300 Andenne<br>
+        ✉️ contact.egliseadn@gmail.com
+    </p>
+
+    <div class="social">
+        <a class="fb" href="https://www.facebook.com/eeaTVegliseevangeliqueandenne/?locale=fr_FR" target="_blank">Facebook</a>
+        <a class="yt" href="https://www.youtube.com/eeatv" target="_blank">YouTube</a>
+        <a class="ig" href="https://www.instagram.com/egliseadn" target="_blank">Instagram</a>
+    </div>
+</section>
+
+<section id="don">
+    <h2>Nous soutenir</h2>
+    <div class="don">
+        <p>Ouvrez votre app bancaire avant de scanner</p>
+
+        <div class="qr">
+            <img src="qr.png" alt="QR Code paiement">
+        </div>
+
+        <p><strong>IBAN : BE16 9502 3371 6074</strong></p>
+    </div>
+</section>
+
+<footer>
+    <img src="logo.jpg" class="footer-logo"><br><br>
+    © 2026 Eglise ADN
+</footer>
+
+</body>
+</html>
